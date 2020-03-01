@@ -90,6 +90,9 @@ header.header-top {
 main {
   flex: 1; }
 
+/**** MAIN ******/
+/** SLIDER **/
+/**** FOOTER *****/
 footer.footer {
   min-height: 65px;
   background-color: #383838;
@@ -137,6 +140,9 @@ footer.footer {
               background-color: #00aaf0; }
 
 /****** RESPONSIVE STYLES *****/
+@media screen and (max-width: 1200px) {
+  footer.footer .container .row .footer-address .footer-address-inner {
+    text-align: center; } }
 @media screen and (max-width: 992px) {
   header.header-top .top-contact span, header.header-top .top-schedule {
     font-size: 12px; }
