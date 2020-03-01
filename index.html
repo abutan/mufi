@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/font-awesome.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/jquery.fancybox.css">
+
     <title>Международный Университет Фитнес - Индустрии</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" defer></script>
+    <script src="./js/jquery.fancybox.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
 
@@ -149,7 +157,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/sertificats/sert_main_01.png" alt="Сертификат" class="img-fluid mb-3">
+                    <a href="./images/sertificats/sert_main_01.png" id="sert-popup">
+                        <img src="./images/sertificats/sert_main_01.png" alt="Сертификат" class="img-fluid mb-3">
+                    </a>
+
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium consectetur, delectus dolorum ducimus expedita fugiat illum molestiae nesciunt obcaecati perspiciatis ratione ullam vitae voluptatem.
                     </div>
@@ -158,8 +169,22 @@
         </article>
     </section>
 
-    <section class="schedule">
-        <article class="container"></article>
+    <section class="schedule mt-1">
+        <article class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-end">
+                    <img src="./images/default/rasp_left.png" alt="Расписание" class="img-fluid">
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-around">
+                    <h3 class="text-center schedule-h">Хотите учиться?</h3>
+                    <h3 class="text-center schedule-h">Смотрите расписание и приходите</h3>
+                    <button>РАСПИСАНИЕ</button>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-end">
+                    <img src="./images/default/rasp_right.png" alt="Расписание" class="img-fluid">
+                </div>
+            </div>
+        </article>
     </section>
 
     <section class="progress-block">
@@ -239,9 +264,5 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
 </body>
 </html>

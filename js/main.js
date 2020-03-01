@@ -7,3 +7,9 @@
         })
     })
 })(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+        $('#sert-popup').fancybox();
+    });
+})(jQuery);

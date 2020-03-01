@@ -103,6 +103,22 @@ main {
 .video {
   font-size: 14px; }
 
+.schedule {
+  min-height: 270px; }
+  .schedule .container .row {
+    min-height: 270px; }
+    .schedule .container .row .col-md-4 .schedule-h {
+      font-family: 'PragmaticaBold', sans-serif;
+      font-size: 28px; }
+    .schedule .container .row .col-md-4 button {
+      display: block;
+      width: 60%;
+      margin: 1rem auto 2rem;
+      background-color: #e22c26;
+      color: #ffffff;
+      padding-top: .5rem;
+      padding-bottom: .5rem; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
@@ -173,7 +189,10 @@ footer.footer {
     margin-bottom: 2rem; }
 
   .video {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  .schedule .container .row .col-md-4 .schedule-h {
+    font-size: 22px; } }
 @media screen and (max-width: 768px) {
   header.header-top .top-menu, header.header-top .top-logo, header.header-top .top-schedule, header.header-top .top-contact, header.header-top .top-social {
     margin-bottom: 1rem; }
