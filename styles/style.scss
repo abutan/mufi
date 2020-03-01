@@ -116,9 +116,6 @@ main {
 
 /**** MAIN ******/
 
-/** SLIDER **/
-
-/** RESULT */
 .result {
   background-color: #383838;
   color: #ffffff;
@@ -130,6 +127,10 @@ main {
       min-height: 100px;
     }
   }
+}
+
+.video {
+  font-size: 14px;
 }
 
 /**** FOOTER *****/
@@ -223,6 +224,9 @@ footer.footer{
   .result .container .row .col-md-3{
     margin-bottom: 2rem;
   }
+  .video{
+    font-size: 10px;
+  }
 }
 
 @media screen and(max-width: 768px) {
@@ -239,6 +243,14 @@ footer.footer{
 
   footer.footer .container .row .copyright .copyright-inner, footer.footer .container .row .footer-phone .footer-phone-inner{
     text-align: center;
+  }
+  .video{
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .video img{
+    display: block;
+    margin: 1rem auto;
   }
 }
 
