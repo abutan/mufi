@@ -1,5 +1,11 @@
 @import "font";
 
+$black: #000000;
+$white: #ffffff;
+$red: #e22c26;
+$blue: #00aaf0;
+$brown: #383838;
+
 html {
   min-height: 100%;
 }
@@ -23,9 +29,9 @@ header.header-top {
     padding-right: 0;
     padding-left: 0;
     .expand-menu{
-      color: #ffffff;
+      color: $white;
       &:hover {
-        color: #ffffff;
+        color: $white;
       }
     }
     .header-menu{
@@ -35,22 +41,22 @@ header.header-top {
       width: 18rem;
       display: none;
       z-index: 1050;
-      background-color: #e22c26;
+      background-color: $red;
       .nav-item, .nav-link {
-        color: #ffffff;
+        color: $white;
         &:hover, &:active, &:focus {
           background-color: #383838;
         }
       }
       .dropdown-menu{
         position: relative!important;
-        background-color: #e22c26;
+        background-color: $red;
         border: none;
         width: 100%;
         z-index: 1050;
         transform: translate3d(0px, 0px, 0px)!important;
         .dropdown-item {
-          color: #ffffff;
+          color: $white;
           &:hover, &:active, &:focus {
             background-color: #383838;
           }
@@ -63,10 +69,10 @@ header.header-top {
     .top-contact-inner {
       min-height: 100%;
       i {
-        color: #000000;
+        color: $black;
       }
       span {
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -80,10 +86,10 @@ header.header-top {
       p{
         margin-bottom: .5rem;
         i{
-          color: #000000;
+          color: $black;
         }
         span{
-          color: #ffffff;
+          color: $white;
         }
       }
     }
@@ -97,7 +103,7 @@ header.header-top {
         margin-bottom: .5rem;
         &:first-child{
           img {
-            background-color: #00aaf0;
+            background-color: $blue;
           }
         }
         a{
@@ -118,7 +124,7 @@ main {
 
 .result {
   background-color: #383838;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   min-height: 100px;
   word-break: break-all;
@@ -147,10 +153,37 @@ main {
           display: block;
           width: 60%;
           margin: 1rem auto 2rem;
-          background-color: #e22c26;
-          color: #ffffff;
+          background-color: $red;
+          color: $white;
           padding-top: .5rem;
           padding-bottom: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.progress-block{
+  background-color: $brown;
+  color: $white;
+  font-size: 14px;
+  h3{
+    font-family: 'PragmaticaBold', sans-serif;
+    font-size: 28px;
+  }
+  .row{
+    min-height: 150px;
+    .col-md-4{
+      .progress-number{
+        font-family: 'PragmaticaBold', sans-serif;
+        font-size: 52px;
+        padding-right: 15px;
+        margin-bottom: 2rem;
+      }
+      .progress-text {
+        h4{
+          font-family: 'PragmaticaBold', sans-serif;
+          font-size: 20px;
         }
       }
     }
@@ -161,7 +194,7 @@ main {
 footer.footer{
   min-height: 65px;
   background-color: #383838;
-  color: #ffffff;
+  color: $white;
   font-size: 14px;
   .container{
     min-height: 65px;
@@ -180,7 +213,7 @@ footer.footer{
           padding-right: 0;
           padding-left: 0;
           i{
-            color: #000000;
+            color: $black;
           }
         }
       }
@@ -189,7 +222,7 @@ footer.footer{
         .footer-phone-inner{
           min-height: 65px;
           i{
-            color: #000000;
+            color: $black;
             margin-right: 7px;
           }
         }
@@ -214,7 +247,7 @@ footer.footer{
             margin-left: 5px;
             img{
               margin-top: 7px;
-              background-color: #00aaf0;
+              background-color: $blue;
             }
           }
         }
@@ -254,6 +287,12 @@ footer.footer{
   .schedule .container .row .col-md-4 .schedule-h{
     font-size: 22px;
   }
+  .progress-block{
+    font-size: 10px;
+  }
+  .progress-block .row .col-md-4 .progress-text h4{
+    font-size: 16px;
+  }
 }
 
 @media screen and(max-width: 768px) {
@@ -278,6 +317,15 @@ footer.footer{
   .video img{
     display: block;
     margin: 1rem auto;
+  }
+  .progress-block{
+    font-size: 14px;
+  }
+  .progress-block .row .col-md-4 .progress-text h4{
+    font-size: 18px;
+  }
+  .progress-block .container .row .col-md-4 .progress-text{
+    width: 100%;
   }
 }
 

@@ -119,6 +119,24 @@ main {
       padding-top: .5rem;
       padding-bottom: .5rem; }
 
+.progress-block {
+  background-color: #383838;
+  color: #ffffff;
+  font-size: 14px; }
+  .progress-block h3 {
+    font-family: 'PragmaticaBold', sans-serif;
+    font-size: 28px; }
+  .progress-block .row {
+    min-height: 150px; }
+    .progress-block .row .col-md-4 .progress-number {
+      font-family: 'PragmaticaBold', sans-serif;
+      font-size: 52px;
+      padding-right: 15px;
+      margin-bottom: 2rem; }
+    .progress-block .row .col-md-4 .progress-text h4 {
+      font-family: 'PragmaticaBold', sans-serif;
+      font-size: 20px; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
@@ -192,7 +210,13 @@ footer.footer {
     font-size: 10px; }
 
   .schedule .container .row .col-md-4 .schedule-h {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .progress-block {
+    font-size: 10px; }
+
+  .progress-block .row .col-md-4 .progress-text h4 {
+    font-size: 16px; } }
 @media screen and (max-width: 768px) {
   header.header-top .top-menu, header.header-top .top-logo, header.header-top .top-schedule, header.header-top .top-contact, header.header-top .top-social {
     margin-bottom: 1rem; }
@@ -213,7 +237,16 @@ footer.footer {
 
   .video img {
     display: block;
-    margin: 1rem auto; } }
+    margin: 1rem auto; }
+
+  .progress-block {
+    font-size: 14px; }
+
+  .progress-block .row .col-md-4 .progress-text h4 {
+    font-size: 18px; }
+
+  .progress-block .container .row .col-md-4 .progress-text {
+    width: 100%; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;
