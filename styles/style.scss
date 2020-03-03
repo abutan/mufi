@@ -190,6 +190,24 @@ main {
   }
 }
 
+.director{
+  h1{
+    color: $red;
+    font-size: 32px;
+    font-family: 'PragmaticaBold', sans-serif;
+  }
+  h3{
+    font-size: 24px;
+    font-family: 'PragmaticaBold', sans-serif;
+  }
+  .director-ul{
+    list-style-image: url('../images/default/galka.png');
+    li{
+      font-size: 15px;
+    }
+  }
+}
+
 /**** FOOTER *****/
 footer.footer{
   min-height: 65px;
@@ -261,6 +279,15 @@ footer.footer{
   footer.footer .container .row .footer-address .footer-address-inner{
     text-align: center;
   }
+  .director h1{
+    font-size: 28px;
+  }
+  .director h3{
+    font-size: 20px;
+  }
+  .director .director-ul li{
+    font-size: 14px;
+  }
 }
 
 @media screen and(max-width: 992px) {
@@ -292,6 +319,15 @@ footer.footer{
   }
   .progress-block .row .col-md-4 .progress-text h4{
     font-size: 16px;
+  }
+  .director h1 {
+    font-size: 24px;
+  }
+  .director h3 {
+    font-size: 18px;
+  }
+  .director .director-ul li {
+    font-size: 12px;
   }
 }
 
@@ -326,6 +362,9 @@ footer.footer{
   }
   .progress-block .container .row .col-md-4 .progress-text{
     width: 100%;
+  }
+  .director .director-ul li {
+    font-size: 14px;
   }
 }
 

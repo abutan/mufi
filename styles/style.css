@@ -137,6 +137,18 @@ main {
       font-family: 'PragmaticaBold', sans-serif;
       font-size: 20px; }
 
+.director h1 {
+  color: #e22c26;
+  font-size: 32px;
+  font-family: 'PragmaticaBold', sans-serif; }
+.director h3 {
+  font-size: 24px;
+  font-family: 'PragmaticaBold', sans-serif; }
+.director .director-ul {
+  list-style-image: url("../images/default/galka.png"); }
+  .director .director-ul li {
+    font-size: 15px; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
@@ -187,7 +199,16 @@ footer.footer {
 /****** RESPONSIVE STYLES *****/
 @media screen and (max-width: 1200px) {
   footer.footer .container .row .footer-address .footer-address-inner {
-    text-align: center; } }
+    text-align: center; }
+
+  .director h1 {
+    font-size: 28px; }
+
+  .director h3 {
+    font-size: 20px; }
+
+  .director .director-ul li {
+    font-size: 14px; } }
 @media screen and (max-width: 992px) {
   header.header-top .top-contact span, header.header-top .top-schedule {
     font-size: 12px; }
@@ -216,7 +237,16 @@ footer.footer {
     font-size: 10px; }
 
   .progress-block .row .col-md-4 .progress-text h4 {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .director h1 {
+    font-size: 24px; }
+
+  .director h3 {
+    font-size: 18px; }
+
+  .director .director-ul li {
+    font-size: 12px; } }
 @media screen and (max-width: 768px) {
   header.header-top .top-menu, header.header-top .top-logo, header.header-top .top-schedule, header.header-top .top-contact, header.header-top .top-social {
     margin-bottom: 1rem; }
@@ -246,7 +276,10 @@ footer.footer {
     font-size: 18px; }
 
   .progress-block .container .row .col-md-4 .progress-text {
-    width: 100%; } }
+    width: 100%; }
+
+  .director .director-ul li {
+    font-size: 14px; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;
