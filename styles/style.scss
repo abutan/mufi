@@ -208,6 +208,25 @@ main {
   }
 }
 
+.events{
+  h2{
+    font-size: 28px;
+    font-family: 'PragmaticaBold', sans-serif;
+    color: $red;
+  }
+  button{
+    width: 260px;
+    background-color: $red;
+    color: $white;
+  }
+  h6{
+    color: $red;
+  }
+  a{
+    color: $black;
+  }
+}
+
 /**** FOOTER *****/
 footer.footer{
   min-height: 65px;

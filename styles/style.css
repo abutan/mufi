@@ -149,6 +149,19 @@ main {
   .director .director-ul li {
     font-size: 15px; }
 
+.events h2 {
+  font-size: 28px;
+  font-family: 'PragmaticaBold', sans-serif;
+  color: #e22c26; }
+.events button {
+  width: 260px;
+  background-color: #e22c26;
+  color: #ffffff; }
+.events h6 {
+  color: #e22c26; }
+.events a {
+  color: #000000; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
