@@ -183,6 +183,14 @@ main {
     .services .row:last-child .col-md-4:last-child {
       background-color: #e22c26; }
 
+.graduates .brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .graduates .brands img {
+    margin-right: 30px;
+    margin-bottom: 30px; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;

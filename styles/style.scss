@@ -258,6 +258,17 @@ main {
     }
   }
 }
+.graduates{
+  .brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img{
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
 
 /**** FOOTER *****/
 footer.footer{
