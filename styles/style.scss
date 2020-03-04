@@ -227,6 +227,38 @@ main {
   }
 }
 
+.services{
+  .row{
+    min-height: 175px;
+    .col-md-2{
+      background-color: $white;
+    }
+    .col-md-4{
+      font-size: 32px;
+      font-family: 'PragmaticaBold', sans-serif;
+      color: $white;
+    }
+    &:first-child{
+      background: url("../images/default/bg-top.png") no-repeat center center /cover;
+      .fitness-course{
+        background-color: $red;
+      }
+      .fitness-seminar{
+        background-color: $brown;
+      }
+    }
+    &:last-child{
+      background: url("../images/default/bg-tdown.png") no-repeat center center /cover;
+      .col-md-4:first-child{
+        background-color: $brown;
+      }
+      .col-md-4:last-child{
+        background-color: $red;
+      }
+    }
+  }
+}
+
 /**** FOOTER *****/
 footer.footer{
   min-height: 65px;
@@ -307,6 +339,9 @@ footer.footer{
   .director .director-ul li{
     font-size: 14px;
   }
+  .services .row .col-md-4{
+    font-size: 28px;
+  }
 }
 
 @media screen and(max-width: 992px) {
@@ -348,6 +383,9 @@ footer.footer{
   .director .director-ul li {
     font-size: 12px;
   }
+  .services .row .col-md-4{
+    font-size: 24px;
+  }
 }
 
 @media screen and(max-width: 768px) {
@@ -384,6 +422,10 @@ footer.footer{
   }
   .director .director-ul li {
     font-size: 14px;
+  }
+  .services .row .col-md-2 img{
+    display: block;
+    margin: auto;
   }
 }
 

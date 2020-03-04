@@ -162,6 +162,27 @@ main {
 .events a {
   color: #000000; }
 
+.services .row {
+  min-height: 175px; }
+  .services .row .col-md-2 {
+    background-color: #ffffff; }
+  .services .row .col-md-4 {
+    font-size: 32px;
+    font-family: 'PragmaticaBold', sans-serif;
+    color: #ffffff; }
+  .services .row:first-child {
+    background: url("../images/default/bg-top.png") no-repeat center center/cover; }
+    .services .row:first-child .fitness-course {
+      background-color: #e22c26; }
+    .services .row:first-child .fitness-seminar {
+      background-color: #383838; }
+  .services .row:last-child {
+    background: url("../images/default/bg-tdown.png") no-repeat center center/cover; }
+    .services .row:last-child .col-md-4:first-child {
+      background-color: #383838; }
+    .services .row:last-child .col-md-4:last-child {
+      background-color: #e22c26; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
@@ -221,7 +242,10 @@ footer.footer {
     font-size: 20px; }
 
   .director .director-ul li {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .services .row .col-md-4 {
+    font-size: 28px; } }
 @media screen and (max-width: 992px) {
   header.header-top .top-contact span, header.header-top .top-schedule {
     font-size: 12px; }
@@ -259,7 +283,10 @@ footer.footer {
     font-size: 18px; }
 
   .director .director-ul li {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .services .row .col-md-4 {
+    font-size: 24px; } }
 @media screen and (max-width: 768px) {
   header.header-top .top-menu, header.header-top .top-logo, header.header-top .top-schedule, header.header-top .top-contact, header.header-top .top-social {
     margin-bottom: 1rem; }
@@ -292,7 +319,11 @@ footer.footer {
     width: 100%; }
 
   .director .director-ul li {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .services .row .col-md-2 img {
+    display: block;
+    margin: auto; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;
