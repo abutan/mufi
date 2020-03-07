@@ -200,6 +200,22 @@ main {
   font-size: 32px;
   color: #e22c26; }
 
+.news h2 {
+  font-family: 'PragmaticaBold', sans-serif;
+  font-size: 32px;
+  color: #e22c26; }
+.news .row .col-md-4 .news-name {
+  font-size: 18px; }
+.news .row .col-md-4 .news-date {
+  font-family: 'PragmaticaBold', sans-serif;
+  color: #e22c26;
+  font-size: 13px; }
+.news .row .col-md-4 a {
+  color: #000000;
+  text-decoration: underline; }
+  .news .row .col-md-4 a:hover {
+    text-decoration: none; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
@@ -303,7 +319,10 @@ footer.footer {
     font-size: 12px; }
 
   .services .row .col-md-4 {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  .news .row .col-md-4 .news-name {
+    font-size: 14px; } }
 @media screen and (max-width: 768px) {
   header.header-top .top-menu, header.header-top .top-logo, header.header-top .top-schedule, header.header-top .top-contact, header.header-top .top-social {
     margin-bottom: 1rem; }
@@ -343,7 +362,11 @@ footer.footer {
     margin: auto; }
 
   .graduates h2 {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .news .col-md-4 {
+    text-align: center;
+    margin-bottom: 3rem; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;

@@ -17,7 +17,6 @@
 (function ($) {
     $('.reviews-slider').slick({
         accessibility: true,
-        lazyLoad: 'ondemand',
         dots: false,
         infinite: false,
         speed: 300,
