@@ -259,6 +259,11 @@ main {
   }
 }
 .graduates{
+  h2{
+    font-family: 'PragmaticaBold', sans-serif;
+    font-size: 26px;
+    color: $red;
+  }
   .brands{
     display: flex;
     flex-wrap: wrap;
@@ -267,6 +272,14 @@ main {
       margin-right: 30px;
       margin-bottom: 30px;
     }
+  }
+}
+
+.reviews{
+  h2{
+    font-family: 'PragmaticaBold', sans-serif;
+    font-size: 32px;
+    color: $red;
   }
 }
 
@@ -437,6 +450,9 @@ footer.footer{
   .services .row .col-md-2 img{
     display: block;
     margin: auto;
+  }
+  .graduates h2{
+    font-size: 22px;
   }
 }
 

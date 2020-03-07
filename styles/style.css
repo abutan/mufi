@@ -183,6 +183,10 @@ main {
     .services .row:last-child .col-md-4:last-child {
       background-color: #e22c26; }
 
+.graduates h2 {
+  font-family: 'PragmaticaBold', sans-serif;
+  font-size: 26px;
+  color: #e22c26; }
 .graduates .brands {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +194,11 @@ main {
   .graduates .brands img {
     margin-right: 30px;
     margin-bottom: 30px; }
+
+.reviews h2 {
+  font-family: 'PragmaticaBold', sans-serif;
+  font-size: 32px;
+  color: #e22c26; }
 
 /**** FOOTER *****/
 footer.footer {
@@ -331,7 +340,10 @@ footer.footer {
 
   .services .row .col-md-2 img {
     display: block;
-    margin: auto; } }
+    margin: auto; }
+
+  .graduates h2 {
+    font-size: 22px; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;
