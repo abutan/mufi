@@ -23,6 +23,16 @@ body {
 a {
   outline: none; }
 
+.page-title {
+  font-family: 'PragmaticaBold', sans-serif;
+  font-size: 28px;
+  color: #000000; }
+
+.page-content {
+  font-family: 'PragmaticaBold', sans-serif;
+  font-size: 24px;
+  color: #000000; }
+
 /***** HEADER *****/
 header.header-top {
   background-color: #383838; }
@@ -225,6 +235,34 @@ main {
   .news .row .col-md-4 a:hover {
     text-decoration: none; }
 
+.faq-accordion .card {
+  border: none; }
+  .faq-accordion .card .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: none; }
+    .faq-accordion .card .card-header h2 .pre-img {
+      background: url("../images/default/arrow_down.png") no-repeat center 3px;
+      display: block;
+      width: 32px;
+      height: 32px; }
+    .faq-accordion .card .card-header h2 .btn-link {
+      color: #000000; }
+  .faq-accordion .card .card-body {
+    padding-left: 10%; }
+  .faq-accordion .card:first-child .card-header h2 .pre-img {
+    background: url("../images/default/arrow_top.png") no-repeat center 3px; }
+
+.faq-question {
+  background-color: #e22c26;
+  color: #ffffff;
+  width: 260px;
+  border-color: #e22c26; }
+  .faq-question:hover {
+    background-color: #e22c26;
+    border-color: #e22c26; }
+
 /**** SIDEBAR ****/
 .red-schedule {
   background-color: #e22c26;
@@ -267,6 +305,9 @@ main {
               white-space: normal; }
               .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:active, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item.active {
                 background-color: #e22c26; }
+      .aside-menu .navbar .navbar-collapse .dropdown-toggle::after {
+        margin-top: 0.4rem;
+        float: right; }
 
 .aside-slider .carousel-control-prev-icon {
   background-image: url("../images/default/left_arrow_black.png"); }

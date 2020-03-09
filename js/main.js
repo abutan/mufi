@@ -70,5 +70,27 @@
 })(jQuery);
 
 (function ($) {
+    let modal = $('#faq-modal');
+    let form = modal.find('form');
+    let submit = modal.find('button[type="submit"]');
+    submit.click(function () {
+        form.submit();
+        modal.hide();
+    })
+})(jQuery);
+
+(function ($) {
     $('.phone-field').inputmask('+7(999) 999 99 99')
+})(jQuery);
+
+(function ($) {
+    $('.collapse').on('shown.bs.collapse', function () {
+        $(this).siblings().find('.pre-img').css('background', 'url("./images/default/arrow_top.png") no-repeat center 3px');
+    })
+})(jQuery);
+
+(function ($) {
+    $('.collapse').on('hidden.bs.collapse', function () {
+        $(this).siblings().find('.pre-img').css('background', 'url("./images/default/arrow_down.png") no-repeat center 3px');
+    })
 })(jQuery);
