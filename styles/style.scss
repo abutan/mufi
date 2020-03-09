@@ -5,6 +5,7 @@ $white: #ffffff;
 $red: #e22c26;
 $blue: #00aaf0;
 $brown: #383838;
+$salat: #40b6c3;
 
 html {
   min-height: 100%;
@@ -42,6 +43,10 @@ header.header-top {
       display: none;
       z-index: 1050;
       background-color: $red;
+      .dropdown-toggle::after{
+        margin-top: 0.4rem;
+        float: right;
+      }
       .nav-item, .nav-link {
         color: $white;
         &:hover, &:active, &:focus {
@@ -121,6 +126,17 @@ main {
 }
 
 /**** MAIN ******/
+
+.breadcrumbs-block{
+  .breadcrumb{
+    background-color: transparent;
+    .breadcrumb-item{
+      a{
+        color: #6c757d;
+      }
+    }
+  }
+}
 
 .result {
   background-color: #383838;
@@ -310,6 +326,77 @@ main {
   }
 }
 
+/**** SIDEBAR ****/
+.red-schedule{
+  background-color: $red;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.backcall{
+  width: 100%;
+  background-color: $salat;
+  margin: 0 auto;
+}
+
+.aside-menu{
+  background-color: $brown;
+  width: 100%;
+  .navbar{
+    width: 100%;
+    padding: 0.5rem 0;
+    .navbar-collapse{
+      width: 100%;
+
+      .nav {
+        padding: 0.5rem 0;
+        width: 100%;
+
+        .nav-item {
+          width: 100%;
+
+          .nav-link {
+            color: $white;
+          }
+
+          &:hover, &:focus, &.active {
+            background-color: $red;
+          }
+
+          .dropdown-menu {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: $brown;
+            border: none;
+
+            .dropdown-item {
+              color: $white;
+              width: 100%;
+              word-break: break-word;
+              white-space: normal;
+              &:hover, &:focus, &:active, &.active {
+                background-color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.aside-slider{
+  .carousel-control-prev-icon{
+    background-image: url("../images/default/left_arrow_black.png");
+  }
+  .carousel-control-next-icon{
+    background-image: url("../images/default/right_arrow_black.png");
+  }
+}
+
+
 /**** FOOTER *****/
 footer.footer{
   min-height: 65px;
@@ -487,6 +574,24 @@ footer.footer{
   .news .col-md-4{
     text-align: center;
     margin-bottom: 3rem;
+  }
+  .left-sidebar{
+    .aside-menu{
+      .navbar.navbar-expand-lg {
+        .navbar-toggler{
+          width: 100%;
+          position: relative;
+          &::after{
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            color: $white;
+            content: 'МЕНЮ';
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
 }
 

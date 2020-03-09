@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Pragmatica';
   src: url("../fonts/pragmatica/subset-Pragmatica.eot");
@@ -41,6 +42,9 @@ header.header-top {
       display: none;
       z-index: 1050;
       background-color: #e22c26; }
+      header.header-top .top-menu .header-menu .dropdown-toggle::after {
+        margin-top: 0.4rem;
+        float: right; }
       header.header-top .top-menu .header-menu .nav-item, header.header-top .top-menu .header-menu .nav-link {
         color: #ffffff; }
         header.header-top .top-menu .header-menu .nav-item:hover, header.header-top .top-menu .header-menu .nav-item:active, header.header-top .top-menu .header-menu .nav-item:focus, header.header-top .top-menu .header-menu .nav-link:hover, header.header-top .top-menu .header-menu .nav-link:active, header.header-top .top-menu .header-menu .nav-link:focus {
@@ -91,6 +95,11 @@ main {
   flex: 1; }
 
 /**** MAIN ******/
+.breadcrumbs-block .breadcrumb {
+  background-color: transparent; }
+  .breadcrumbs-block .breadcrumb .breadcrumb-item a {
+    color: #6c757d; }
+
 .result {
   background-color: #383838;
   color: #ffffff;
@@ -215,6 +224,54 @@ main {
   text-decoration: underline; }
   .news .row .col-md-4 a:hover {
     text-decoration: none; }
+
+/**** SIDEBAR ****/
+.red-schedule {
+  background-color: #e22c26;
+  width: 100%;
+  margin: 0 auto; }
+
+.backcall {
+  width: 100%;
+  background-color: #40b6c3;
+  margin: 0 auto; }
+
+.aside-menu {
+  background-color: #383838;
+  width: 100%; }
+  .aside-menu .navbar {
+    width: 100%;
+    padding: 0.5rem 0; }
+    .aside-menu .navbar .navbar-collapse {
+      width: 100%; }
+      .aside-menu .navbar .navbar-collapse .nav {
+        padding: 0.5rem 0;
+        width: 100%; }
+        .aside-menu .navbar .navbar-collapse .nav .nav-item {
+          width: 100%; }
+          .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link {
+            color: #ffffff; }
+          .aside-menu .navbar .navbar-collapse .nav .nav-item:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item.active {
+            background-color: #e22c26; }
+          .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: #383838;
+            border: none; }
+            .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item {
+              color: #ffffff;
+              width: 100%;
+              word-break: break-word;
+              white-space: normal; }
+              .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item:active, .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu .dropdown-item.active {
+                background-color: #e22c26; }
+
+.aside-slider .carousel-control-prev-icon {
+  background-image: url("../images/default/left_arrow_black.png"); }
+.aside-slider .carousel-control-next-icon {
+  background-image: url("../images/default/right_arrow_black.png"); }
 
 /**** FOOTER *****/
 footer.footer {
@@ -366,7 +423,18 @@ footer.footer {
 
   .news .col-md-4 {
     text-align: center;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+
+  .left-sidebar .aside-menu .navbar.navbar-expand-lg .navbar-toggler {
+    width: 100%;
+    position: relative; }
+    .left-sidebar .aside-menu .navbar.navbar-expand-lg .navbar-toggler::after {
+      position: absolute;
+      top: 30%;
+      left: 45%;
+      color: #ffffff;
+      content: 'МЕНЮ';
+      font-size: 16px; } }
 @media screen and (max-width: 445px) {
   header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
     width: 80%;

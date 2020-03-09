@@ -58,3 +58,17 @@
         ]
     });
 })(jQuery);
+
+(function ($) {
+    let modal = $('#backcall-modal');
+    let form = modal.find('form');
+    let submit = modal.find('button[type="submit"]');
+    submit.click(function () {
+        form.submit();
+        modal.hide();
+    })
+})(jQuery);
+
+(function ($) {
+    $('.phone-field').inputmask('+7(999) 999 99 99')
+})(jQuery);
