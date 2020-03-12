@@ -378,6 +378,15 @@ main {
   }
 }
 
+.course-block{
+  .col-md-4{
+    a{
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}
+
 /**** SIDEBAR ****/
 .red-schedule{
   background-color: $red;
