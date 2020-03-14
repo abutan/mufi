@@ -320,6 +320,24 @@ main {
 .aside-slider .carousel-control-next-icon {
   background-image: url("../images/default/right_arrow_black.png"); }
 
+.page-list {
+  list-style-type: none; }
+  .page-list li:before {
+    content: "-";
+    position: relative;
+    left: -5px; }
+
+.text-bold {
+  font-family: 'PragmaticaBold', sans-serif; }
+
+.btn-red {
+  background-color: #e22c26;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff; }
+  .btn-red:hover {
+    color: #ffffff; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;

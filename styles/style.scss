@@ -464,6 +464,29 @@ main {
   }
 }
 
+.page-list{
+  list-style-type: none;
+  li:before{
+    content:  "-";
+    position: relative;
+    left:     -5px;
+  }
+}
+
+.text-bold{
+  font-family: 'PragmaticaBold', sans-serif;
+}
+
+.btn-red{
+  background-color: $red;
+  width: 100%;
+  margin: 0 auto;
+  color: $white;
+  &:hover{
+    color: $white;
+  }
+}
+
 
 /**** FOOTER *****/
 footer.footer{

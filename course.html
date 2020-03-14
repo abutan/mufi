@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./styles/font-awesome.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/jquery.fancybox.css">
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="./styles/slick-theme.css">
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Международный Университет Фитнес - Индустрии</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer></script>
+    <script src="./js/bootstrap/bootstrap.js" defer></script>
+    <script src="./js/slick.js" defer></script>
+    <script src="./js/jquery.fancybox.js" defer></script>
+    <script src="./js/jquery.inputmask.min.js" defer></script>
+
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+<header class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-menu d-flex flex-xl-column justify-content-around align-items-md-center">
+                <a href="#" class="expand-menu">
+                    <i class="fa fa-4x fa-bars" aria-hidden="true"></i>
+                </a>
+                <div class="header-menu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutUs">
+                                <a class="dropdown-item" href="about_about.html">О нас</a>
+                                <a class="dropdown-item" href="#">Фитнес педагоги</a>
+                                <a class="dropdown-item" href="#">Благодарственные письма</a>
+                                <a class="dropdown-item" href="#">Часто задаваемые вопросы</a>
+                                <a class="dropdown-item" href="#">Вакансии</a>
+                                <a class="dropdown-item" href="#">Новости</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Расписание</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="study" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Обучение
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="study">
+                                <a class="dropdown-item" href="study.html">Фитнес курсы</a>
+                                <a class="dropdown-item" href="#">Фитнес консалтинг</a>
+                                <a class="dropdown-item" href="#">Онлайн обучение</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Мероприятия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 top-contact">
+                <div class="top-contact-inner d-flex justify-content-around align-items-center">
+                    <i class="fa fa-3x fa-map-marker" aria-hidden="true"></i>
+                    <span>г. Екатеринбург, <br> ул. Радищева 6а, <br> оф 2702 (7 этаж)</span>
+                </div>
+            </div>
+            <div class="col-md-4 top-logo d-flex justify-content-center">
+                <a href="/">
+                    <img src="./images/default/logo.png" alt="Домой" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-2 top-schedule">
+                <div class="top-schedule-inner d-flex flex-column justify-content-center">
+                    <p class="d-flex justify-content-around align-items-center">
+                        <i class="fa fa-phone-square"> </i><span>+7(343)302-26-32</span>
+                    </p>
+                    <p class="d-flex justify-content-around align-items-center">
+                        <i class="fa fa-clock-o"></i> <span>Пн-Пт 8:30-19:00</span>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-2 top-social">
+                <div class="top-social-inner d-flex flex-column justify-content-center">
+                    <p class="d-flex justify-content-end">
+                        <a href="#"><img class="img-fluid" src="./images/default/fb.png" alt="Facebook"></a>
+                        <a href="#"><img class="img-fluid" src="./images/default/vk.png" alt=VContact""></a>
+                        <a href="#"><img class="img-fluid" src="./images/default/insta.png" alt="Instagram"></a>
+                        <a href="#"><img class="img-fluid" src="./images/default/youtube.png" alt=Youtube""></a>
+                    </p>
+                    <p class="d-flex justify-content-end">
+                        <a href=""><img class="img-fluid" src="./images/default/viber.png" alt="Viber"></a>
+                        <a href=""><img class="img-fluid" src="./images/default/telegram.png" alt="Telegram"></a>
+                        <a href=""><img class="img-fluid" src="./images/default/whatsup.png" alt="Whatsup"></a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-content mb-3">
+
+    <div class="container mb-5 mt-3">
+        <nav class="breadcrumbs-block" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Фитнес курсы &nbsp;/&nbsp; Инструктор тренажерного зала 1-ый уровень</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="left-sidebar">
+                    <a href="schedule.html" class="mb-2 red-schedule btn btn-dark">РАСПИСАНИЕ</a>
+                    <button type="button" class="mb-2 backcall btn btn-info" data-toggle="modal" data-target="#backcall-modal">ЗАКАЗАТЬ ЗВОНОК</button>
+
+                    <div class="aside-menu mb-5">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="fitness-course" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Фитнес курсы
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="fitness-course">
+                                            <a class="dropdown-item" href="#">Фитнес курсы</a>
+                                            <a class="dropdown-item" href="#">Фитнес курсы</a>
+                                            <a class="dropdown-item" href="#">Фитнес курсы</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="business-course" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Бизнес курсы
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="business-course">
+                                            <a class="dropdown-item" href="#">Бизнес курсы</a>
+                                            <a class="dropdown-item" href="#">Бизнес курсы</a>
+                                            <a class="dropdown-item" href="#">Бизнес курсы</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="fitness-consulting" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Фитнес консалтинг
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="fitness-consulting">
+                                            <a class="dropdown-item" href="#">Отдел продаж под ключ</a>
+                                            <a class="dropdown-item" href="#">Консалтинг. Открытие фитнес клуба с нуля под ключ</a>
+                                            <a class="dropdown-item" href="#">Консалтинг. Открытие фитнес клуба с нуля под ключ</a>
+                                            <a class="dropdown-item" href="#">Открытие фитнес спа</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="fitness-online" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Онлайн обучение
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="fitness-online">
+                                            <a class="dropdown-item" href="#">Онлайн обучение</a>
+                                            <a class="dropdown-item" href="#">Онлайн обучение</a>
+                                            <a class="dropdown-item" href="#">Онлайн обучение</a>
+                                            <a class="dropdown-item" href="#">Онлайн обучение</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="aside-slider mb-5">
+                        <div id="aside-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/slider/slide_main_01.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/slider/slide_main_01.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/slider/slide_main_01.png" class="d-block w-100" alt="...">
+                                </div>
+                                <a class="carousel-control-prev" href="#aside-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#aside-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+
+            <div class="col-md-9">
+                <h1 class="page-title">Инструктор тренажерного зала 1-ый уровень</h1>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="text-danger mb-3">Оплата возможна по частям!</p>
+                        <p class="mb-3">Набор на обучение идет на постоянной основе, можно присоединиться в любой момент курса</p>
+                        <p class="mb-3">Для уточнения дополнительной информации можете позвонить +7(343) 302 26 32 , или оставить заявку заполнив форму внизу страницы.</p>
+                        <h4 class="mb-4 text-bold">Стажировка в течении одного месяца в клубе по выбору</h4>
+                        <p class="mb-4 text-muted">*Наличие вакантных мест для прохождения стажировки – уточняется.</p>
+                        <p class="mb-0">Сеть фитнес клубов POWERHOUSE GYM:</p>
+                        <ul class="page-list">
+                            <li>Сибирский тракт 2</li>
+                            <li>Халтурина 55</li>
+                            <li>Хохрякова 10</li>
+                            <li>Серафимы Дерябиной, 24</li>
+                        </ul>
+                        <p>Сеть Фитнес клубов DRIVE FITNESS</p>
+                        <p>Фитнес клуб «CITY FITNESS» |  ул.  Первомайская 77</p>
+                        <p>Фитнес клуб  «PANORAMA» | ул. Куйбышева 44, Д</p>
+                        <p>Фитнес клуб  «GYMHALL»  | ул. Начдива Онуфриева, 70А</p>
+                        <p>Фитнес клуб  «LIFE FIT» | ул. Степана Разина, 95</p>
+                        <h4 class="mb-0 text-bold">Выдаваемый документ:</h4>
+                        <ul class="page-list">
+                            <li>Выдается сертификат установленного образца Международного Университета фитнес – индустрии.</li>
+                            <li>По окончание всего курса выдается Удостоверение о повышение квалификации ОТ “Свердловского областного педагогического колледжа – ГБПОУ СО</li>
+                        </ul>
+                        <h3 class="mb-0 text-bold">ПРОГРАММА КУРСА:</h3>
+                        <p class="mb-0">Обучение проходит по выходным дням.</p>
+                        <p>Время с 10.00 до 17.00*</p>
+                        <p class="text-muted">*Возможны корректировки по времени</p>
+                        <div class="table-responsive">
+                            <table  class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <td>№</td>
+                                    <td>Наименования тем, модулей</td>
+                                    <td>ЧАСЫ</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Анатомия,биомеханика</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>1.1</td>
+                                    <td>Плоскости и оси</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1.2</td>
+                                    <td>Клетка, органеллы</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1.3</td>
+                                    <td>Ткани</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.4</td>
+                                    <td>Схема опорно-двигательного аппарата</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.5</td>
+                                    <td>Скелет, строение кости, классификация костей</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1.6</td>
+                                    <td>Суставы, движение в суставах</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1.7</td>
+                                    <td>Мышечная ткань, строение, функции, классификации</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1.8</td>
+                                    <td>Основы биомеханики</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1.9</td>
+                                    <td>Топографическая анатомия мышц</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>1.10</td>
+                                    <td>Строение пищеварительной системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.11</td>
+                                    <td>Строение дыхательной системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.12</td>
+                                    <td>Строение сердечно-сосудистой системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.13</td>
+                                    <td>Строение эндокринной системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.14</td>
+                                    <td>Строение иммунной системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>1.15</td>
+                                    <td>Строение нервной системы</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Физиология и биоэнергетика мышечной деятельности</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>2.1</td>
+                                    <td>Методология</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.2</td>
+                                    <td>Физиология сокращения мышечного волокна</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.3</td>
+                                    <td>Модель работы и энергообеспечения мышечного волокна</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.4</td>
+                                    <td>Модель саркомера</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.5</td>
+                                    <td>Модель биологической клетки</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.6</td>
+                                    <td>Мышечная композиция</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.7</td>
+                                    <td>Нервно-мышечный аппарат</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.8</td>
+                                    <td>Модель эндокринной системы</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2.9</td>
+                                    <td>Методы развития миофибрилл и митохондрий, взаимосвязь развития с энергообеспечением</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>2.9.1</td>
+                                    <td>Методика набора мышечной массы</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2.9.2</td>
+                                    <td>Методика развития выносливости</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2.9.3</td>
+                                    <td>Методика похудения и коррекции фигуры</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Теория и методика фитнес-тренировки</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3.1</td>
+                                    <td>Профессиональные навыки тренера</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>3.2</td>
+                                    <td>Виды занятий</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>3.3</td>
+                                    <td>Цели и задачи клиентов и их интерпретация тренером</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4</td>
+                                    <td>Теория и методика тренировки</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4.1</td>
+                                    <td>Особенности тренировки детей</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4.2</td>
+                                    <td>Особенности тренировки женщин</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4.3</td>
+                                    <td>Особенности тренировки людей пожилого возраста</td>
+                                    <td>0.4</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4.4</td>
+                                    <td>Особенности тренировки в горах</td>
+                                    <td>0.3</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4.5</td>
+                                    <td>Особенности тренировки при низких и высоких температурах</td>
+                                    <td>0.3</td>
+                                </tr>
+                                <tr>
+                                    <td>3.5</td>
+                                    <td>Начало работы в клубе, инструменты работы</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Диагностика в фитнесе</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4.1</td>
+                                    <td>Калиперометрия, антропометрия</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>4.2</td>
+                                    <td>Биоимпедансометрия</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>4.3</td>
+                                    <td>Тест PWC 170</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>4.4</td>
+                                    <td>Проба Руфье-Диксона</td>
+                                    <td>0.5</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Практика тренировочного процесса, выполнение упражнений</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>5.1</td>
+                                    <td>Упражнения для мышц ног</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>5.2</td>
+                                    <td>Упражнения для мышц груди</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>5.3</td>
+                                    <td>Упражнения для мышц спины</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>5.4</td>
+                                    <td>Упражнения для дельтовидных мышц</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>Упражнения для мышц рук</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>Упражнения для мышц брюшного пресса</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Оказание первой доврачебной помощи</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Основы психологии в работе с клиентом. Продажи персонального тренинга</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Практика</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Итого</td>
+                                    <td>81</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3  class="text-bold">ЦЕЛИ:</h3>
+                        <ul class="page-list">
+                            <li>Разобраться в понятии «Фитнес» и в его направлениях</li>
+                            <li>Изучить физиологию работы мышечных волокон</li>
+                            <li>Изучение теории спортивной тренировки</li>
+                            <li>Изучить влияние функциональных систем организма на спортивную тренировку</li>
+                            <li>Разобрать основные принципы работы фитнес-инструктора</li>
+                            <li>Рассмотреть основы техники безопасности в ТЗ (тренажерном зале)</li>
+                        </ul>
+                        <h3 class="text-bold">Тезисы:</h3>
+                        <ol>
+                            <li>Данная форма курса дает более четкий взгляд на профессию инструктор тренажерного зала, учитывая все стороны этой широкой темы. Техническая сторона формирует «инструменты», философская сторона создает фундаментальную идею и мотивацию.</li>
+                            <li>Первый уровень курса – это работа над собой</li>
+                        </ol>
+                        <h3 class="text-bold">Результат:</h3>
+                        <p>В ходе прохождения курса появится четкое понимание работы в ТЗ, сформируется база знаний для построения спортивной тренировки. Теория даст основные понятия, а практика позволит прочувствовать эти знания на себе. Участник семинара сможет сам выстроить матрицу тренировочного процесса для решения любой задачи.</p>
+                        <h6 class="text-bold">По окончанию обучения Вы приобретаете:</h6>
+                        <ol>
+                            <li>Фундаментальные знания, на которых основывается профессия «фитнес-тренер».</li>
+                            <li>Инструменты, с помощью которых вы увеличите свою эффективность и, как следствие, свое благосостояние.</li>
+                            <li>Умение пользоваться этими инструментами.</li>
+                            <li>Уверенность в своих силах и возможностях.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/default/enter.png" alt="Запись" class="img-fluid mb-3">
+                        <button type="button" class="mb-2 btn btn-red" data-toggle="modal" data-target="#enter-modal">ЗАПИСАТЬСЯ</button>
+                    </div>
+                </div>
+
+                <div class="row mt-5 justify-content-between">
+                    <div class="col-md-3">
+                        <h4 class="text-bold">Хотите записаться на курс?</h4>
+                        <h5 class="text-bold">
+                            Позвоните +7 (343) 302 26 32
+                        </h5>
+                        <h5 class="text-bold">
+                            Или напишите нам
+                        </h5>
+                        <button type="button" class="mb-2 btn btn-red" data-toggle="modal" data-target="#enter-modal">ЗАПИСАТЬСЯ</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/default/enter.png" alt="Запись" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 copyright ">
+                <div class="copyright-inner d-md-flex justify-content-md-start align-items-md-center">
+                    Международный университет <br> фитнес-индустрии &copy; 2008-2020
+                </div>
+            </div>
+            <div class="col-md-3 footer-address ">
+                <div class="footer-address-inner d-flex justify-content-around align-items-center">
+                    <i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>
+                    <span>г. Екатеринбург, ул. Радищева 6а,<br> оф 2702 (7 этаж)</span>
+                </div>
+            </div>
+            <div class="col-md-3 footer-phone">
+                <div class="footer-phone-inner d-flex justify-content-center align-items-center">
+                    <i class="fa fa-phone-square"> </i><span>+7(343)302-26-32</span>
+                </div>
+            </div>
+            <div class="col-md-1 footer-messenger">
+                <div class="footer-messenger-inner d-flex justify-content-center align-items-center">
+                    <p class="d-flex justify-content-end">
+                        <a href=""><img src="./images/default/viber.png" alt="Viber"></a>
+                        <a href=""><img src="./images/default/telegram.png" alt="Telegram"></a>
+                        <a href=""><img src="./images/default/whatsup.png" alt="Whatsup"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social">
+                <div class="footer-social-inner d-flex justify-content-end align-items-center">
+                    <p class="d-flex justify-content-end">
+                        <a href="#"><img src="./images/default/fb.png" alt="Facebook"></a>
+                        <a href="#"><img src="./images/default/vk.png" alt=VContact""></a>
+                        <a href="#"><img src="./images/default/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="./images/default/youtube.png" alt=Youtube""></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="backcall-modal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-muted" id="backCallModalLabel">Заказать звонок</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="text" class="form-control phone-field" id="phone" placeholder="Ваш телефон">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div class="modal fade" id="enter-modal" tabindex="-1" role="dialog" aria-labelledby="enterModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-muted" id="enterModalLabel">Записаться</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name-field">Ваше имя</label>
+                        <input type="text" class="form-control" id="name-field" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-field">Телефон</label>
+                        <input type="text" class="form-control phone-field" id="phone-field" placeholder="Ваш телефон">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button type="submit" class="btn btn-primary">Записаться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
