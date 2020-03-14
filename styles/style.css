@@ -351,6 +351,13 @@ ol li:before {
   counter-increment: li;
   content: counters(li,".") ". "; }
 
+.review-form p {
+  font-size: 14px; }
+.review-form .btn-review {
+  background-color: #e22c26;
+  width: 265px;
+  color: #ffffff; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;

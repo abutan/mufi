@@ -503,6 +503,17 @@ ol li:before {
   content: counters(li,".") ". ";
 }
 
+.review-form{
+  p{
+    font-size: 14px;
+  }
+  .btn-review{
+    background-color: $red;
+    width: 265px;
+    color: $white;
+  }
+}
+
 
 /**** FOOTER *****/
 footer.footer{
