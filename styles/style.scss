@@ -487,6 +487,22 @@ main {
   }
 }
 
+.breadcrumb {
+  list-style: none!important;
+  li:before{
+    content: ' ';
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+ol li:before {
+  counter-increment: li;
+  content: counters(li,".") ". ";
+}
+
 
 /**** FOOTER *****/
 footer.footer{

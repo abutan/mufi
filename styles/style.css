@@ -338,6 +338,19 @@ main {
   .btn-red:hover {
     color: #ffffff; }
 
+.breadcrumb {
+  list-style: none !important; }
+  .breadcrumb li:before {
+    content: ' '; }
+
+ol {
+  list-style: none;
+  counter-reset: li; }
+
+ol li:before {
+  counter-increment: li;
+  content: counters(li,".") ". "; }
+
 /**** FOOTER *****/
 footer.footer {
   min-height: 65px;
