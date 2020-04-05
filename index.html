@@ -29,47 +29,54 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1 top-menu d-flex flex-xl-column justify-content-around align-items-md-center">
-                <a href="#" class="expand-menu">
+                <span class="expand-menu">
                     <i class="fa fa-4x fa-bars" aria-hidden="true"></i>
-                </a>
+                </span>
                 <div class="header-menu">
-                    <ul class="nav flex-column">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                О нас
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="aboutUs">
-                                <a class="dropdown-item" href="about_about.html">О нас</a>
-                                <a class="dropdown-item" href="#">Фитнес педагоги</a>
-                                <a class="dropdown-item" href="#">Благодарственные письма</a>
-                                <a class="dropdown-item" href="about_faq.html">Часто задаваемые вопросы</a>
-                                <a class="dropdown-item" href="#">Вакансии</a>
-                                <a class="dropdown-item" href="#">Новости</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="schedule.html">Расписание</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="study" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Обучение
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="study">
-                                <a class="dropdown-item" href="study.html">Фитнес курсы</a>
-                                <a class="dropdown-item" href="#">Фитнес консалтинг</a>
-                                <a class="dropdown-item" href="#">Онлайн обучение</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Отзывы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Мероприятия</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
+                    <nav class="navbar  navbar-expand">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerDropdown" aria-controls="headerDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="headerDropdown">
+                            <ul class="nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        О нас
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="aboutUs">
+                                        <a class="dropdown-item" href="about_about.html">О нас</a>
+                                        <a class="dropdown-item" href="#">Фитнес педагоги</a>
+                                        <a class="dropdown-item" href="#">Благодарственные письма</a>
+                                        <a class="dropdown-item" href="about_faq.html">Часто задаваемые вопросы</a>
+                                        <a class="dropdown-item" href="#">Вакансии</a>
+                                        <a class="dropdown-item" href="#">Новости</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="schedule.html">Расписание</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="study" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Обучение
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="study">
+                                        <a class="dropdown-item" href="study.html">Фитнес курсы</a>
+                                        <a class="dropdown-item" href="#">Фитнес консалтинг</a>
+                                        <a class="dropdown-item" href="#">Онлайн обучение</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="events.html">Мероприятия</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
             <div class="col-md-3 top-contact">
@@ -313,10 +320,14 @@
                         <img src="./images/default/usl_main_01.png" alt="Услуги" class="img-fluid">
                     </div>
                     <div class="col-md-4 d-flex flex-column justify-content-center align-items-center fitness-course">
-                        <span>ФИТНЕС</span><span>КУРСЫ</span>
+                        <a href="/education/fitnes_kursi/" class="d-flex flex-column justify-content-center align-items-center">
+                            <span>ФИТНЕС</span><span>КУРСЫ</span>
+                        </a>
                     </div>
                     <div class="col-md-4 d-flex flex-column justify-content-center align-items-center fitness-seminar">
-                        <span>ФИТНЕС</span><span>СЕМИНАРЫ</span>
+                        <a href="/education/fitnes_seminary/" class="d-flex flex-column justify-content-center align-items-center">
+                            <span>ФИТНЕС</span><span>СЕМИНАРЫ</span>
+                        </a>
                     </div>
                     <div class="col-md-2">
                         <img src="./images/default/usl_main_02.png" alt="Услуги" class="img-fluid">
@@ -332,10 +343,14 @@
                         <img src="./images/default/usl_main_03.png" alt="Услуги" class="img-fluid">
                     </div>
                     <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                        <span>ФИТНЕС</span><span>КОНСАЛТИНГ</span>
+                        <a href="/education/fitness_consulting/" class="d-flex flex-column justify-content-center align-items-center">
+                            <span>ФИТНЕС</span><span>КОНСАЛТИНГ</span>
+                        </a>
                     </div>
                     <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                        <span>ОНЛАЙН</span><span>ОБУЧЕНИЕ</span>
+                        <a href="/education/online_obuchenie/" class="d-flex flex-column justify-content-center align-items-center">
+                            <span>ОНЛАЙН</span><span>ОБУЧЕНИЕ</span>
+                        </a>
                     </div>
                     <div class="col-md-2">
                         <img src="./images/default/usl_main_04.png" alt="Услуги" class="img-fluid">

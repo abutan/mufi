@@ -1,10 +1,37 @@
 (function ($) {
     $(document).ready(function () {
         let button = $('.expand-menu');
+        let menu = $('.header-menu');
+        let flag = false;
         button.click(function (e) {
-            e.preventDefault();
-            $('.header-menu').toggle();
-        })
+            if (flag === false) {
+                menu.fadeIn(700);
+                flag = true;
+                if($(window).width()>769){
+                    $('.navbar .dropdown').hover(function() {
+                        $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+                    }, function() {
+                        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+                    });
+
+                    $('.navbar .dropdown > a').click(function(){
+                        location.href = this.href;
+                    });
+                }
+            } else {
+                menu.fadeOut(700);
+                flag = false;
+            }
+            e.stopPropagation();
+        });
+
+        $(document).click(function (e) {
+            if (flag === true) {
+                menu.fadeOut(700);
+                flag = false;
+            }
+            e.stopPropagation();
+        });
     })
 })(jQuery);
 
@@ -183,3 +210,59 @@
         calendar.render();
     });
 })();
+
+(function ($) {
+
+    if($(window).width()>769){
+        $('.nav .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+        });
+
+        $('.nav .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+    }
+})(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+        let menu = $('.aside-menu').find('nav');
+        let par = menu.find('.nav-link');
+        let drop = menu.find('.dropdown-item');
+
+        if (menu.is(':visible')) {
+            if (sessionStorage.getItem('trace') !== null) {
+                let text = sessionStorage.getItem('trace').toString();
+                menu.find('a:contains(' + text + ')').addClass('active-trace');
+            }
+
+            if (sessionStorage.getItem('active') !== null) {
+                console.log(sessionStorage.getItem('active'));
+                let text = sessionStorage.getItem('active').toString();
+                let link = menu.find('a:contains(' + text + ')');
+                link.addClass('active');
+                link.parent().parent().find('a').addClass('active-trace');
+                link.parent().css('display', 'block');
+            }
+            sessionStorage.clear();
+        }
+
+        par.click(function (e) {
+            sessionStorage.clear();
+            sessionStorage.setItem('trace', $(this).text());
+            e.stopPropagation();
+        });
+
+        drop.click(function (e) {
+            sessionStorage.clear();
+            // let parent = $(this).parent().parent().find('a');
+            sessionStorage.setItem('active', $(this).text());
+            // sessionStorage.setItem('trace', parent.text());
+            e.stopPropagation();
+        });
+    });
+})(jQuery);

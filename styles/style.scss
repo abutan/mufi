@@ -42,6 +42,7 @@ header.header-top {
     padding-right: 0;
     padding-left: 0;
     .expand-menu{
+      cursor: pointer;
       color: $white;
       &:hover {
         color: $white;
@@ -55,28 +56,39 @@ header.header-top {
       display: none;
       z-index: 1050;
       background-color: $red;
-      .dropdown-toggle::after{
-        margin-top: 0.4rem;
-        float: right;
-      }
-      .nav-item, .nav-link {
-        color: $white;
-        &:hover, &:active, &:focus {
-          background-color: #383838;
-        }
-      }
-      .dropdown-menu{
-        position: relative!important;
-        background-color: $red;
-        border: none;
-        width: 100%;
-        z-index: 1050;
-        transform: translate3d(0px, 0px, 0px)!important;
-        .dropdown-item {
-          color: $white;
-          &:hover, &:active, &:focus {
-            background-color: #383838;
+      nav{
+        padding: 0;
+        .collapse{
+          width: 100%;
+          .nav{
+            display: block;
+            width: 100%;
+            .dropdown-toggle::after{
+              margin-top: 0.4rem;
+              float: right;
+            }
+            .nav-item, .nav-link {
+              color: $white;
+              &:hover, &:active, &:focus {
+                background-color: #383838;
+              }
+            }
+            .dropdown-menu{
+              position: relative!important;
+              background-color: $red;
+              border: none;
+              width: 100%;
+              z-index: 1050;
+              transform: translate3d(0px, 0px, 0px)!important;
+              .dropdown-item {
+                color: $white;
+                &:hover, &:active, &:focus {
+                  background-color: #383838;
+                }
+              }
+            }
           }
+
         }
       }
     }
@@ -258,13 +270,27 @@ main {
 .services{
   .row{
     min-height: 175px;
+    margin-right: 0;
+    margin-left: 0;
     .col-md-2{
       background-color: $white;
     }
     .col-md-4{
       font-size: 32px;
       font-family: 'PragmaticaBold', sans-serif;
-      color: $white;
+      -webkit-transition: font-size 0.5s linear 0.5s;
+      -moz-transition: font-size 0.5s linear 0.5s;
+      -o-transition: font-size 0.5s linear 0.5s;
+      transition: font-size 0.5s linear 0.5s;
+      a {
+        color: $white;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      &:hover{
+        font-size: 36px;
+      }
     }
     &:first-child{
       background: url("../images/default/bg-top.png") no-repeat center center /cover;
@@ -421,12 +447,13 @@ main {
 
           .nav-link {
             color: $white;
+            &:hover, &:focus, &.active , &.active-trace{
+              background-color: $red;
+            }
           }
-
-          &:hover, &:focus, &.active {
+          &:hover, &:focus, &.active , &.active-trace{
             background-color: $red;
           }
-
           .dropdown-menu {
             width: 100%;
             position: relative;
@@ -598,6 +625,9 @@ footer.footer{
   .services .row .col-md-4{
     font-size: 28px;
   }
+  .services .row .col-md-4:hover{
+    font-size: 32px;
+  }
 }
 
 @media screen and(max-width: 992px) {
@@ -641,6 +671,9 @@ footer.footer{
   }
   .services .row .col-md-4{
     font-size: 24px;
+  }
+  .services .row .col-md-4:hover{
+    font-size: 28px;
   }
   .news .row .col-md-4 .news-name {
     font-size: 14px;

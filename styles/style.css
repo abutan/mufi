@@ -41,6 +41,7 @@ header.header-top {
     padding-right: 0;
     padding-left: 0; }
     header.header-top .top-menu .expand-menu {
+      cursor: pointer;
       color: #ffffff; }
       header.header-top .top-menu .expand-menu:hover {
         color: #ffffff; }
@@ -52,24 +53,31 @@ header.header-top {
       display: none;
       z-index: 1050;
       background-color: #e22c26; }
-      header.header-top .top-menu .header-menu .dropdown-toggle::after {
-        margin-top: 0.4rem;
-        float: right; }
-      header.header-top .top-menu .header-menu .nav-item, header.header-top .top-menu .header-menu .nav-link {
-        color: #ffffff; }
-        header.header-top .top-menu .header-menu .nav-item:hover, header.header-top .top-menu .header-menu .nav-item:active, header.header-top .top-menu .header-menu .nav-item:focus, header.header-top .top-menu .header-menu .nav-link:hover, header.header-top .top-menu .header-menu .nav-link:active, header.header-top .top-menu .header-menu .nav-link:focus {
-          background-color: #383838; }
-      header.header-top .top-menu .header-menu .dropdown-menu {
-        position: relative !important;
-        background-color: #e22c26;
-        border: none;
-        width: 100%;
-        z-index: 1050;
-        transform: translate3d(0px, 0px, 0px) !important; }
-        header.header-top .top-menu .header-menu .dropdown-menu .dropdown-item {
-          color: #ffffff; }
-          header.header-top .top-menu .header-menu .dropdown-menu .dropdown-item:hover, header.header-top .top-menu .header-menu .dropdown-menu .dropdown-item:active, header.header-top .top-menu .header-menu .dropdown-menu .dropdown-item:focus {
-            background-color: #383838; }
+      header.header-top .top-menu .header-menu nav {
+        padding: 0; }
+        header.header-top .top-menu .header-menu nav .collapse {
+          width: 100%; }
+          header.header-top .top-menu .header-menu nav .collapse .nav {
+            display: block;
+            width: 100%; }
+            header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-toggle::after {
+              margin-top: 0.4rem;
+              float: right; }
+            header.header-top .top-menu .header-menu nav .collapse .nav .nav-item, header.header-top .top-menu .header-menu nav .collapse .nav .nav-link {
+              color: #ffffff; }
+              header.header-top .top-menu .header-menu nav .collapse .nav .nav-item:hover, header.header-top .top-menu .header-menu nav .collapse .nav .nav-item:active, header.header-top .top-menu .header-menu nav .collapse .nav .nav-item:focus, header.header-top .top-menu .header-menu nav .collapse .nav .nav-link:hover, header.header-top .top-menu .header-menu nav .collapse .nav .nav-link:active, header.header-top .top-menu .header-menu nav .collapse .nav .nav-link:focus {
+                background-color: #383838; }
+            header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-menu {
+              position: relative !important;
+              background-color: #e22c26;
+              border: none;
+              width: 100%;
+              z-index: 1050;
+              transform: translate3d(0px, 0px, 0px) !important; }
+              header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-menu .dropdown-item {
+                color: #ffffff; }
+                header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-menu .dropdown-item:hover, header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-menu .dropdown-item:active, header.header-top .top-menu .header-menu nav .collapse .nav .dropdown-menu .dropdown-item:focus {
+                  background-color: #383838; }
   header.header-top .top-contact {
     min-height: 100%; }
     header.header-top .top-contact .top-contact-inner {
@@ -182,13 +190,24 @@ main {
   color: #000000; }
 
 .services .row {
-  min-height: 175px; }
+  min-height: 175px;
+  margin-right: 0;
+  margin-left: 0; }
   .services .row .col-md-2 {
     background-color: #ffffff; }
   .services .row .col-md-4 {
     font-size: 32px;
     font-family: 'PragmaticaBold', sans-serif;
-    color: #ffffff; }
+    -webkit-transition: font-size 0.5s linear 0.5s;
+    -moz-transition: font-size 0.5s linear 0.5s;
+    -o-transition: font-size 0.5s linear 0.5s;
+    transition: font-size 0.5s linear 0.5s; }
+    .services .row .col-md-4 a {
+      color: #ffffff; }
+      .services .row .col-md-4 a:hover {
+        text-decoration: none; }
+    .services .row .col-md-4:hover {
+      font-size: 36px; }
   .services .row:first-child {
     background: url("../images/default/bg-top.png") no-repeat center center/cover; }
     .services .row:first-child .fitness-course {
@@ -295,7 +314,9 @@ main {
           width: 100%; }
           .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link {
             color: #ffffff; }
-          .aside-menu .navbar .navbar-collapse .nav .nav-item:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item.active {
+            .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link.active, .aside-menu .navbar .navbar-collapse .nav .nav-item .nav-link.active-trace {
+              background-color: #e22c26; }
+          .aside-menu .navbar .navbar-collapse .nav .nav-item:hover, .aside-menu .navbar .navbar-collapse .nav .nav-item:focus, .aside-menu .navbar .navbar-collapse .nav .nav-item.active, .aside-menu .navbar .navbar-collapse .nav .nav-item.active-trace {
             background-color: #e22c26; }
           .aside-menu .navbar .navbar-collapse .nav .nav-item .dropdown-menu {
             width: 100%;
@@ -420,7 +441,10 @@ footer.footer {
     font-size: 14px; }
 
   .services .row .col-md-4 {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .services .row .col-md-4:hover {
+    font-size: 32px; } }
 @media screen and (max-width: 992px) {
   header.header-top .top-contact span, header.header-top .top-schedule {
     font-size: 12px; }
@@ -462,6 +486,9 @@ footer.footer {
 
   .services .row .col-md-4 {
     font-size: 24px; }
+
+  .services .row .col-md-4:hover {
+    font-size: 28px; }
 
   .news .row .col-md-4 .news-name {
     font-size: 14px; } }
