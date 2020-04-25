@@ -130,11 +130,6 @@ header.header-top {
       min-height: 100%;
       p{
         margin-bottom: .5rem;
-        &:first-child{
-          img {
-            background-color: $blue;
-          }
-        }
         a{
           img{
             margin-left: 5px;
@@ -599,7 +594,6 @@ footer.footer{
             margin-left: 5px;
             img{
               margin-top: 7px;
-              background-color: $blue;
             }
           }
         }
@@ -685,16 +679,50 @@ footer.footer{
     margin-bottom: 1rem;
   }
   header.header-top .top-menu .header-menu {
-    width: 100%;
+    width: 200%;
   }
-  header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social{
+  header.header-top .top-contact .top-contact-inner, header.header-top .top-social .top-social-inner{
     width: 50%;
     margin: auto;
+  }
+
+  header.header-top .top-schedule .top-schedule-inner {
+    width: 30%;
+    margin: auto;
+  }
+
+  header.header-top .top-social .top-social-inner {
+    justify-content: center!important;
+    p{
+      justify-content: center!important
+    }
+  }
+
+  footer.footer .container .row .footer-address .footer-address-inner {
+    width: 45%;
+    margin: auto;
+    span{
+      text-align: center;
+    }
+  }
+
+  footer.footer .container .row .footer-social .footer-social-inner {
+    width: 50%;
+    margin: auto;
+    justify-content: center!important;
   }
 
   footer.footer .container .row .copyright .copyright-inner, footer.footer .container .row .footer-phone .footer-phone-inner{
     text-align: center;
   }
+
+  .services .row .col-md-4 {
+    font-size: 20px;
+    &:hover{
+      font-size: 22px;
+    }
+  }
+
   .video{
     font-size: 14px;
     margin-bottom: 1rem;
@@ -746,9 +774,27 @@ footer.footer{
   }
 }
 
+@media screen and (max-width: 575px) {
+  header.header-top .top-menu, {
+    width: 30%!important;
+    justify-content: end!important;
+  }
+  header.header-top .top-contact {
+    width: 65%;
+  }
+}
+
 @media screen and (max-width: 445px){
-  header.header-top .top-contact .top-contact-inner, header.header-top .top-schedule .top-schedule-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-address .footer-address-inner, footer.footer .container .row .footer-social {
+  header.header-top .top-contact .top-contact-inner, header.header-top .top-social .top-social-inner, footer.footer .container .row .footer-social {
     width: 80%;
+    margin: auto;
+  }
+  header.header-top .top-schedule .top-schedule-inner {
+    width: 40%;
+    margin: auto;
+  }
+  footer.footer .container .row .footer-address .footer-address-inner {
+    width: 70%;
     margin: auto;
   }
 }
