@@ -778,6 +778,12 @@ footer.footer{
   header.header-top .top-menu, {
     width: 30%!important;
     justify-content: end!important;
+    span{
+      width: 100%;
+      i{
+        float: right;
+      }
+    }
   }
   header.header-top .top-contact {
     width: 65%;

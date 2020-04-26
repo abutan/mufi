@@ -573,6 +573,10 @@ footer.footer {
   header.header-top .top-menu {
     width: 30% !important;
     justify-content: end !important; }
+    header.header-top .top-menu span {
+      width: 100%; }
+      header.header-top .top-menu span i {
+        float: right; }
 
   header.header-top .top-contact {
     width: 65%; } }
