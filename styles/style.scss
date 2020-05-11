@@ -244,15 +244,17 @@ main {
 }
 
 .events{
-  h2{
+  .events-header {
+    justify-content: space-between;
+    h2{
     font-size: 28px;
     font-family: 'PragmaticaBold', sans-serif;
     color: $red;
   }
-  button{
-    width: 260px;
-    background-color: $red;
-    color: $white;
+    .btn-secondary{
+      background-color: $red;
+      color: $white;
+    }
   }
   h6{
     color: $red;
@@ -698,6 +700,15 @@ footer.footer{
     }
   }
 
+  .events {
+    .events-header{
+      flex-direction: column;
+      min-height: 70px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   footer.footer .container .row .footer-address .footer-address-inner {
     width: 45%;
     margin: auto;
@@ -775,7 +786,7 @@ footer.footer{
 }
 
 @media screen and (max-width: 575px) {
-  header.header-top .top-menu, {
+  header.header-top .top-menu {
     width: 30%!important;
     justify-content: end!important;
     span{
